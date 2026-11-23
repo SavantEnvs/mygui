@@ -1,0 +1,9 @@
+project: savantenvs/mygui
+target: fuzz_textiterator
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_textiterator/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_textiterator
+    libfuzzer: true
+    timeout: 10

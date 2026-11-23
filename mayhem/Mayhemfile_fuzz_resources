@@ -1,0 +1,9 @@
+project: savantenvs/mygui
+target: fuzz_resources
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_resources/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_resources
+    libfuzzer: true
+    timeout: 10

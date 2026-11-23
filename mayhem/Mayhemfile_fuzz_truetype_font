@@ -1,0 +1,9 @@
+project: savantenvs/mygui
+target: fuzz_truetype_font
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_truetype_font/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_truetype_font
+    libfuzzer: true
+    timeout: 10

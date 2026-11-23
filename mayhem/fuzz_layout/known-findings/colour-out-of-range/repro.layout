@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout">
+	<Widget type="TextBox" skin="TextBox" position="0 0 90 74" name="t">
+		<Property key="Caption" value="x"/>
+		<Property key="TextColour" value="2 0 0"/>
+	</Widget>
+</MyGUI>

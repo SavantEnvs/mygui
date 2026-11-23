@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Resource" version="1.1">
+	<Resource type="ResourceSkin" name="TestScrollView" size="300 300">
+		<Child type="Widget" name="Client" skin="Default"
+			offset="0 0 300 300" align="Stretch"/>
+	</Resource>
+	<Resource type="ResourceSkin" name="TestComboBox" size="120 24">
+		<Child type="ListBox" name="List" skin="TestListBox" style="Popup"
+			offset="0 0 120 60" align="Default" layer="Popup"/>
+	</Resource>
+	<Resource type="ResourceLayout" name="TestListBox" version="3.2.0">
+		<Widget type="Widget" skin="Default" position="0 0 120 60" name="Root">
+			<UserString key="HeightLine" value="20"/>
+		</Widget>
+	</Resource>
+	<Resource type="ResourceLayout" name="TestComboHeightLayout" version="3.2.0">
+		<Widget type="ComboBox" skin="TestComboBox" position="0 0 120 24" layer="Main">
+			<Property key="ItemHeight" value="32"/>
+		</Widget>
+	</Resource>
+</MyGUI>
